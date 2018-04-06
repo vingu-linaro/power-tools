@@ -1,0 +1,77 @@
+{
+	"tasks" : {
+		"thread0" : {
+			"instance" : 1,
+			"cpus" : [0],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 10000, "mode" : "absolute" }
+		},
+		"thread1" : {
+			"delay": 10,
+			"instance" : 1,
+			"cpus" : [1],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 10000, "mode" : "absolute" }
+		},
+		"thread2" : {
+			"delay": 20,
+			"instance" : 1,
+			"cpus" : [2],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 10000, "mode" : "absolute" }
+		},
+		"thread3" : {
+			"delay": 30,
+			"instance" : 1,
+			"cpus" : [3],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 10000, "mode" : "absolute" }
+		},
+		"thread4" : {
+			"delay": 40,
+			"instance" : 1,
+			"cpus" : [4],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 10000, "mode" : "absolute" }
+		},
+		"thread5" : {
+			"delay": 50,
+			"instance" : 1,
+			"cpus" : [5],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 10000, "mode" : "absolute" }
+		},
+		"thread6" : {
+			"delay": 60,
+			"instance" : 1,
+			"cpus" : [6],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 10000, "mode" : "absolute" }
+		},
+		"thread7" : {
+			"delay": 70,
+			"instance" : 1,
+			"cpus" : [7],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 10000, "mode" : "absolute" }
+		},
+	},
+	"global" : {
+		"duration" : 3,
+		"calibration" : 130,
+		"default_policy" : "SCHED_OTHER",
+		"pi_enabled" : false,
+		"lock_pages" : true,
+		"logdir" : "./",
+		"log_size" : "disable",
+		"log_basename" : "residency-run",
+	}
+}
