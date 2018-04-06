@@ -1,0 +1,21 @@
+{
+	"tasks" : {
+		"thread4" : {
+			"instance" : 1,
+			"cpus" : [6],
+			"loop" : -1,
+			"run" :   1,
+			"timer" : { "ref" : "unique", "period" : 1000, "mode" : "absolute" }
+		},
+	},
+	"global" : {
+		"duration" : 30,
+		"calibration" : 130,
+		"default_policy" : "SCHED_OTHER",
+		"pi_enabled" : false,
+		"lock_pages" : true,
+		"logdir" : "./",
+		"log_size" : "disable",
+		"log_basename" : "residency-run",
+	}
+}
